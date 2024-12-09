@@ -1,0 +1,47 @@
+body{
+min-height: 100vh;
+}
+
+.container{
+  padding-top: 90px;
+  max-width: 1180px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+  .container{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+input{
+  border: none;
+}
+input:focus{
+  border: none;
+}
+/* Remove estilos de foco globais para inputs */
+[type='text']:focus,
+input:where(:not([type])):focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='week']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
